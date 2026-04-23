@@ -101,7 +101,7 @@ QPushButton:pressed {
           <widget class="QLineEdit" name="valorx2">
            <property name="styleSheet">
             <string notr="true">QDialog, QWidget {
-    background-color: #000000; /* negro */
+    background-color: #f8bbf0ff; /* negro */
 }
 
 /* QLabel */
@@ -113,9 +113,9 @@ QLabel {
 
 /* Botones gaming */
 QPushButton {
-    background-color: #8B0000;
+    background-color: #f1f38aff;
     color: #FFD700;
-    border: 2px solid #FFD700;
+    border: 2px solid #ccc9f7ff;
     border-radius: 10px;
     padding: 8px 16px;
     font-weight: bold;
@@ -124,10 +124,10 @@ QPushButton {
 QLineEdit {
     background-color: #1a0000; /* negro con tono rojizo */
     color: #FFD700; /* texto dorado */
-    border: 2px solid #8B0000; /* rojo oscuro */
+    border: 2px solid #9ce5a6ff; /* rojo oscuro */
     border-radius: 8px;
     padding: 6px;
-    selection-background-color: #8B0000; /* cuando seleccionas texto */
+    selection-background-color: #8e98f1ff; /* cuando seleccionas texto */
     selection-color: #FFD700;
 }
 
@@ -139,7 +139,7 @@ QLineEdit:focus {
 
 /* Hover */
 QLineEdit:hover {
-    border: 2px solid #B22222;
+    border: 2px solid #f0a5a5ff;
 }
 
 /* Placeholder (texto guía) */
@@ -217,21 +217,3 @@ QPushButton:pressed {
  <connections/>
 </ui>
 
-Load menu
-from PyQt5 import QtWidgets, uic
-from load.load_ventana_psp1 import VentanaCalculadoraSum
-
-class MenuPrincipal(QtWidgets.QMainWindow):
-    def __init__(self):
-        super().__init__()
-        uic.loadUi("gui/menu_principal.ui", self)
-        self.showMaximized()
-        
-        self.actioncalculadora.triggered.connect(self.ingresarCalculadoraSum)
-        self.actionsalir.triggered.connect(self.salir)
-    def ingresarCalculadoraSum(self):
-
-        self.vc = VentanaCalculadoraSum()
-        self.vc.show()
-    def salir(self):
-        self.close()
