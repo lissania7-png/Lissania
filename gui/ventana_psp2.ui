@@ -20,7 +20,7 @@
 
 /* QLabel */
 QLabel {
-    color: #FFD700;
+    color: #94dfa1ff;
     font-weight: bold;
     font-size: 36pt;
 }
@@ -28,8 +28,8 @@ QLabel {
 /* Botones gaming */
 QPushButton {
     background-color: #48b9dbff;
-    color: #FFD700;
-    border: 2px solid #FFD700;
+    color: #9293d8ff;
+    border: 2px solid #a9e9c1ff;
     border-radius: 10px;
     padding: 8px 16px;
     font-weight: bold;
@@ -37,12 +37,12 @@ QPushButton {
 /* QLineEdit estilo gaming */
 QLineEdit {
     background-color: #5e81f5ff; /* negro con tono rojizo */
-    color: #FFD700; /* texto dorado */
+    color: #c0e0c7ff; /* texto dorado */
     border: 2px solid #477dbbff; /* rojo oscuro */
     border-radius: 8px;
     padding: 6px;
     selection-background-color: #6cdaa3ff; /* cuando seleccionas texto */
-    selection-color: #FFD700;
+    selection-color: #fdc8f6ff;
 }
 
 /* Cuando el usuario hace clic */
@@ -65,7 +65,7 @@ QPushButton:hover {
 }
 
 QPushButton:pressed {
-    background-color: #005504ff;
+    background-color: #b0cef0ff;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -106,7 +106,7 @@ QPushButton:pressed {
 
 /* QLabel */
 QLabel {
-    color: #FFD700;
+    color: #071b53ff;
     font-weight: bold;
     font-size: 36pt;
 }
@@ -123,35 +123,35 @@ QPushButton {
 /* QLineEdit estilo gaming */
 QLineEdit {
     background-color: #1a0000; /* negro con tono rojizo */
-    color: #FFD700; /* texto dorado */
+    color: #a2f1a2ff; /* texto dorado */
     border: 2px solid #9ce5a6ff; /* rojo oscuro */
     border-radius: 8px;
     padding: 6px;
     selection-background-color: #8e98f1ff; /* cuando seleccionas texto */
-    selection-color: #FFD700;
+    selection-color: #766fb4ff;
 }
 
 /* Cuando el usuario hace clic */
 QLineEdit:focus {
-    border: 2px solid #FFD700; /* borde dorado brillante */
-    background-color: #260000;
+    border: 2px solid #b1edfcff; /* borde dorado brillante */
+    background-color: #bbebd5ff;
 }
 
 /* Hover */
 QLineEdit:hover {
-    border: 2px solid #f0a5a5ff;
+    border: 2px solid #7888cfff;
 }
 
 /* Placeholder (texto guía) */
 QLineEdit::placeholder {
-    color: #aa6666; /* rojizo tenue */
+    color: #c9fad5ff; /* rojizo tenue */
 }
 QPushButton:hover {
-    background-color: #B22222;
+    background-color: #e6a1a1ff;
 }
 
 QPushButton:pressed {
-    background-color: #550000;
+    background-color: #9dd6b3ff;
 }</string>
            </property>
           </widget>
