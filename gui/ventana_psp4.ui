@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>600</width><height>450</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>PSP4 - Intervalos</string>
+  </property>
+  <property name="styleSheet">
+  <string notr="true">
+   /*Fondo general */
+QMainWindow, QWidget {
+    background-color: #111111ff;
+    color: #f3dcc4ff;
+    font-family: "Segoe UI";
+}
+
+/* 🌿 Contenedor principal tipo card */
+#centralwidget {
+    background-color: #a4d4e2ff;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* Título */
+#titulo {
+    font-size: 24pt;
+    font-weight: bold;
+    color: #a7e3f5ff;
+    margin-bottom: 15px;
+}
+
+/* Labels normales */
+QLabel {
+    font-size: 14pt;
+    color: #bae6beff;
+}
+
+/* RESULTADOS (cuadritos bonitos) */
+QLabel#label_r, 
+QLabel#label_r2, 
+QLabel#label_t,
+QLabel#label_yk,
+QLabel#label_upi,
+QLabel#label_lpi {
+    background-color: #9fb5ddff;
+    border: 2px solid #d6d0c4;
+    border-radius: 10px;
+    padding: 8px;
+    min-height: 30px;
+}
+
+/*  Inputs */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #d6d0c4;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #f3f2acff;
+}
+
+/* Botón */
+QPushButton {
+    background-color: #7a8f5c;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+QPushButton:hover {
+    background-color: #dcf1c4ff;
+}
+
+QPushButton:pressed {
+    background-color: #a6d6e2ff;
+}
+  </string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <item>
+     <widget class="QLabel" name="titulo">
+      <property name="text">
+       <string>Intervalos de Predicción</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>XK</string></property></widget></item>
+      <item><widget class="QLineEdit" name="input_xk"/></item>
+     </layout>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="btn_calcular4">
+      <property name="text"><string>Calcular</string></property>
+     </widget>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>YK</string></property></widget></item>
+      <item><widget class="QLabel" name="label_yk"><property name="text"><string>0</string></property></widget></item>
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>UPI</string></property></widget></item>
+      <item><widget class="QLabel" name="label_upi"><property name="text"><string>0</string></property></widget></item>
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>LPI</string></property></widget></item>
+      <item><widget class="QLabel" name="label_lpi"><property name="text"><string>0</string></property></widget></item>
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+</ui>

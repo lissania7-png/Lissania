@@ -33,3 +33,4 @@ class MenuPrincipal(QtWidgets.QMainWindow):
 
     def salir(self):
         self.close()
+            

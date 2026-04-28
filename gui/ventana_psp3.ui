@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PSP3 - Correlación</string>
+  </property>
+  <property name="styleSheet">
+  <string notr="true">
+
+/*  Fondo general */
+QMainWindow, QWidget {
+    background-color: #080808ff; /* beige suave */
+    color: #f1ede9ff;
+    font-family: "Segoe UI", "Helvetica Neue";
+}
+
+/*  Títulos */
+#titulo {
+    font-size: 26pt;
+    font-weight: bold;
+    color: #e7f3afff; /* verde oliva */
+    padding-bottom: 10px;
+}
+
+/*  Labels normales */
+QLabel {
+    font-size: 14pt;
+    color: #9ecdecff;
+}
+
+/*  Inputs */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #b3e1ecff;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 14pt;
+    color: #3e3a36;
+}
+
+QLineEdit:focus {
+    border: 2px solid #f7dbf7ff; /* verde oliva más fuerte */
+    background-color: #fdfcf9;
+}
+
+/*  Botones */
+QPushButton {
+    background-color: #bfb1e4ff; /* oliva */
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #91b4f5ff;
+}
+
+QPushButton:pressed {
+    background-color: #accbdaff;
+}
+
+/* 🌿 Resultados (labels de salida) */
+QLabel#resultado {
+    background-color: #ffffff;
+    border: 2px solid #f3f8c1ff;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 14pt;
+    color: #3e3a36;
+
+}
+
+</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <item>
+     <widget class="QLabel" name="titulo">
+      <property name="text">
+       <string>Resultados PSP3</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>r</string></property></widget></item>
+      <item><widget class="QLabel" name="label_r"><property name="text"><string>0</string></property></widget></item>
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>r²</string></property></widget></item>
+      <item><widget class="QLabel" name="label_r2"><property name="text"><string>0</string></property></widget></item>
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>t</string></property></widget></item>
+      <item><widget class="QLabel" name="label_t"><property name="text"><string>0</string></property></widget></item>
+     </layout>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="btn_calcular3">
+      <property name="text"><string>Calcular</string></property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+</ui>
