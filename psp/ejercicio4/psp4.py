@@ -1,11 +1,11 @@
-import math
+import math  
 
 class Intervalos(object):
     def __init__(self, x, y, xk):
         self.x = x
         self.y = y
-        self.n = len(x)
         self.xk = xk
+        self.n = len(x)
 
     def calcular(self):
         xavg = sum(self.x)/self.n
@@ -19,7 +19,6 @@ class Intervalos(object):
 
         yk = b0 + b1*self.xk
 
-        # error estándar
         sr = 0
         for i in range(self.n):
             sr += (self.y[i] - (b0 + b1*self.x[i]))**2
@@ -28,7 +27,7 @@ class Intervalos(object):
 
         sumx = sum((xi - xavg)**2 for xi in self.x)
 
-        t = 2.262  # aprox (puedes ajustar según tabla)
+        t = 2.262 
 
         rango = t * s * math.sqrt(1 + 1/self.n + ((self.xk - xavg)**2 / sumx))
 

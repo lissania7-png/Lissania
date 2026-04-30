@@ -70,7 +70,7 @@ QPushButton:pressed {
     background-color: #accbdaff;
 }
 
-/* 🌿 Resultados (labels de salida) */
+/ Resultados (labels de salida) */
 QLabel#resultado {
     background-color: #ffffff;
     border: 2px solid #f3f8c1ff;

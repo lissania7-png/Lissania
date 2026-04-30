@@ -1,4 +1,5 @@
 import math
+
 class Correlacion(object):
     def __init__(self, x, y):
         self.x = x
@@ -17,9 +18,6 @@ class Correlacion(object):
 
         r = numer / denom
         r2 = r**2
-
-        # t de student
         t = abs(r) * math.sqrt((self.n - 2) / (1 - r**2))
 
         return r, r2, t
-    
